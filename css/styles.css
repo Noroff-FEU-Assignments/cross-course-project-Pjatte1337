@@ -30,24 +30,23 @@ header {
   padding-bottom: 10px;
   border-bottom: 2px solid #000000;
 }
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
 .logo {
   width: 750px;
-  height: auto;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-
-header {
-  background-image: url(/images/SquareEyes_Logo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
+.logo {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .button {
