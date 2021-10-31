@@ -1,0 +1,65 @@
+body {
+  background: #eb5c23;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  font-size: 15px;
+  color: #000000;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  display: inline;
+}
+
+nav a {
+  padding: 1%;
+}
+
+.current {
+  font-weight: bold;
+}
+
+header {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000000;
+}
+.logo {
+  width: 750px;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-image: url(/images/SquareEyes_Logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  /* stylistic */
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.button {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
