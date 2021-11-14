@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="connect film-lovers">
-    <title>SquareEyes My Account</title> 
+    <title>SquareEyes Purchase</title> 
     <script src="https://kit.fontawesome.com/d1bd4e9ed7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
@@ -30,27 +30,36 @@
       </header>
     <main>
         <section>
-            <div>
-                <img src="images/male-user-icon-transparent-png-19823.png" alt="create account icon" class="create__icon">
-            </div>
-            <div>
-        <h3>My Account</h3>
+            <div class="purchase">
+        <h3>Purchase</h3>
             </div>
         </section> 
         <section>
-            <div class="container">
-                <h1>Account and settings</h1>
-                <nav class="account_nav">
-                    <ul>
-                    <li>My Account</li>
-                    <li>Orders</li>
-                    <li>Language</li>
-                    <li>History</li>
-                  </ul>
-                </nav>
-                <p class="changeinfo">Change name, email, mobil number, password.</p>
-                <a href="#" class="cta__edit">Edit</a>
+            <div class="container_email">
+                <h1 class="purchase_topic">Email Adresse</h1>
             </div>
+            <div class="container_payment">
+                <h1 class="purchase_topic">Payment</h1>
+            </div>
+            <div class="emailtext">
+                <form action="#" method="post">
+                    <input type="text" name="email" placeholder="email address">
+                </form>
+            </div>
+            <div class="paymenttext">
+                <form action="#" method="post">
+                    <input type="text" name="payment" placeholder="Payment cardnumber">
+                </form>
+            </div>
+            <div class="container_movie">
+                <h1 class="movie_info">AstroWorld</h1>
+                <img src="images/StockSnap_VCJK4NBK4W.jpg" alt="Astroworld" class="astroworld_picture">
+                <p class="astroworld_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum, sit vitae suscipit molestias nam beatae aperiam quasi</p>
+                <h2 class="price">Total to Pay 499,00 kr</h2>
+            </div>
+        </section>
+        <section>
+            <a href="watch.html" class="cta_pay_n_watch">PAY AND WATCH</a>
         </section>
     </main>
     </body>
