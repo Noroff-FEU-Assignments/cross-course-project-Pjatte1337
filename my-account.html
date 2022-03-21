@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquareEyes | MyPage</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@800&family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="img/SquareEyes_Logo blue.png" class="logo" alt="SE logo"></a>
+            </div>
+            <div class="profile-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a href="movies.html">Movies</a></li>
+                    <li class="menu-list-item active"><a href="account.html">Account</a></li>
+                    <li class="menu-list-item"><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="my-account.html"><img class="profile-picture" src="img/profile.jpg" alt="profile picture"></a>
+                <div class="profile-text-container">dropdown</div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="#"><ion-icon class="sidebar-icon" name="search-outline"></ion-icon></a>
+        <a href="index.html"><ion-icon class="sidebar-icon" name="home-outline"></ion-icon></a>
+        <a href="my-account.html"><ion-icon class="sidebar-icon" name="accessibility-outline"></ion-icon></a>
+        <a href="shopping-cart.html"><ion-icon class="sidebar-icon" name="cart-outline"></ion-icon></a>
+        <a href="contact.html"><ion-icon class="sidebar-icon" name="help-circle-outline"></ion-icon></a>
+    </div>
+</header>
+<hr>
+<body>
+    <section>
+        <div class="myprofile-container">
+            <div class="myprofile">
+                <div class="myprofile-content">
+                    <img src="img/profile.jpg" class="myprofile-img" alt="My Profile img">
+                    <h2>Profile</h2>
+                    <input type="text" name="" placeholder="Enter Name">
+                    <input type="mail" name="" placeholder="Enter Email">
+                    <input type="text" name="" placeholder="Enter Phonenumber">
+                    <input type="text" name="" placeholder="Enter Date of birth">
+                    
+                    <div>
+                        <button class="update-btn" id="button">Update</button>
+                    </div>
+                    <div class="popup">
+                        <div class="popup-content">
+                            <img src="img/close kopi.png" alt="close" class="close">
+                            <h1>Thank you!</h1>
+                            <p>Your profile is now updated.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </footer>
+    <script src="js/my-account.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
