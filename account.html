@@ -37,6 +37,7 @@
 </header>
 <hr>
 <body>
+    <div id="preloader"></div>
     <section class="account-container">
         <div class="login-container">
             <div class="card">
@@ -58,19 +59,16 @@
                             </div>
                         </form>
                         <button type="button" class="new-btn" onclick="openRegister()">New User</button>
-                        <input type="checkbox" class="checkbox"><span>Remeber Me</span>
                         <a href="#" id="forgot">Forgot Password</a>
                     </div>
                     <div class="card-back">
                         <h2>REGISTER</h2>
                         <hr>
                         <form>
-                            <input type="text" class="input-box" placeholder="Your name" required>
+                            <input type="txt" class="input-box" placeholder="Your name" required>
                             <input type="Email" class="input-box" placeholder="Enter Email" required>
                             <input type="Password" class="input-box" placeholder="Enter Password" required>
                             <a href="my-account.html"><button type="submit" class="submit-btn">Create</button></a>
-                            <input type="checkbox"><span>Creator</span>
-                            <input type="checkbox"><span>watcher</span>
                             <div class="popup">
                                 <div class="popup-content">
                                     <img src="img/close kopi.png" alt="close" class="close">
@@ -101,6 +99,7 @@
             <li><a href="about.html">About</a></li>
         </ul>
     </footer>
+    <script src="js/script.js"></script>
     <script src="js/account.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -26,7 +26,7 @@ async function getMovies(){
             movieContainer.innerHTML += `<a href="./movies-details.html?id=${id}" class="movie">
                                             <h1>${movieTitle}</h1>
                                             <img src="${IMGPATH + img}" class="movie-img" alt="${movieTitle}"/>
-                                            <button class="btn-more"> Read more </button>
+                                            <button class="btn-read-more"> Read more </button>
                                             </a>
                                             `
         });
@@ -38,6 +38,20 @@ async function getMovies(){
 }
 
 getMovies();
+
+
+
+
+/* Loader */
+
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+
+
+
 
 
 

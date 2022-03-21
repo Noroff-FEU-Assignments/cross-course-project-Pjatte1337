@@ -31,6 +31,7 @@ main {
 }
 
 .btn1 {
+  background-color: #283538;
     border-radius: 9px;
     font-family: 'Oswald', sans-serif;
     color: #24b5da;
@@ -43,19 +44,10 @@ main {
 }
 
 .btn1:hover {
-    color: #f50bce;
-    border: solid #f50bce 3px;
+    color: #ffffff;
+    border: solid #ffffff 3px;
 }
 
-@media screen and (max-width: 768px) {
-    .content h1 {
-        font-size: 250%;
-    }
-    .btn1 {
-        font-size: 110%;
-        padding: 7px 15px;
-    }
-}
 
 
 
@@ -102,7 +94,7 @@ footer .social_icon li a {
 
 footer .social_icon li a:hover {
   transform: translateY(-10px);
-  color: #f50bce;
+  color: #ffffff;
   box-shadow: 6px 6px 6px #24b5da;
 
 }
@@ -119,7 +111,7 @@ footer .menu li a {
 
 footer .menu li a:hover{
   opacity: 1;
-  color: #f50bce;
+  color: #ffffff;
   box-shadow: 6px 6px 6px #24b5da;
 }
 
@@ -131,5 +123,27 @@ img {
 }
 
 
+/* loader */
+#preloader {
+  background: #000 url(../img/loading.gif) no-repeat center center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 
 
+
+
+
+/* media query */
+@media screen and (max-width: 768px) {
+  .content h1 {
+      font-size: 250%;
+  }
+  .btn1 {
+      font-size: 110%;
+      padding: 7px 15px;
+  }
+}

@@ -40,7 +40,7 @@ function createHTML(info) {
                                 <p class="italic">Release ${info.release_date}</p>
                                 <p class="price"> Price : $9,99 </p>
                                 <hr>
-                                <button class="btn-more" id="button">Buy to watch</button>
+                                <button class="btn-buy" id="button">Buy to watch</button>
                                 </div>
                                 `;
 
@@ -58,8 +58,8 @@ function createHTML(info) {
                                 </div>`
 
     buttons.innerHTML =         `<div class="detail-flex-button">
-                                <a href="./shopping-cart.html?id=${id}" class="cta-bag">Go to bag</a>
-                                <a href="movies.html" class="cta-white">Look for more</a>
+                                <a href="./shopping-cart.html?id=${id}" class="btn-cart">go to cart</a>
+                                <a href="movies.html" class="btn-back">Look for more</a>
                                 </div>`
 }
 

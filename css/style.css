@@ -107,7 +107,7 @@ header {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    border: solid #24b5da 1px;
+    border: 3px solid #24b5da;
     position: relative;
 }
 
@@ -140,7 +140,7 @@ header {
 }
 
 .sidebar-icon:hover {
-    color: #da24bc;
+    color: #ffffff;
     box-shadow: 6px 6px 6px #24b5da;
 }
 
@@ -167,9 +167,9 @@ header {
     text-align: center;
     height: 150px;
     width:70%;
-    margin-left: 15%;
     border-radius: 50px;
-    border: 3px solid rgb(0, 60, 78);
+    border: 3px solid #24b5da;
+    margin: 25px 0px 20px 300px;
 }
 
 .content p {
@@ -190,7 +190,7 @@ header {
 .movie {
     padding: 1rem;
     background: #283538;
-    border: 3px solid rgb(0, 60, 78);
+    border: 3px solid #24b5da;
     border-radius: 1rem;
     justify-content: center;
     align-items:center ;
@@ -244,30 +244,26 @@ header {
 }
 
 
-.btn-more {
-    width: 150px;
-    height: 40px;
-    border: none;
-    color: white;
+.btn-read-more {
     background-color: #24b5da;
-    border-radius: 4px;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 5px 35px;
+    text-transform: uppercase;
+    font-size: 14px;
     box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
     transition: ease-out 0.5s;
-    font-size: 1rem;
-    outline: none;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 0 10px;
-    margin: 35px 0 10px;
-  }
+    border: 1px solid #ffffff;
+}
+
   
-  .btn-more:hover {
+  .btn-read-more:hover {
     box-shadow: inset 262px 0 0 0 rgb(251, 252, 251),
-    6px 6px 6px #24b5da;;
+    6px 6px 6px #24b5da;
     cursor: pointer;
     color: black;
     font-weight: bold;
-    
   }
 
 
@@ -278,7 +274,7 @@ header {
     max-width: 600px;
     height: 600px;
     background: #283538;
-    border: 3px solid rgb(0, 60, 78);
+    border: 3px solid #24b5da;
     border-radius: 1rem;
     justify-content: center;
     align-items:center ;
@@ -302,7 +298,7 @@ header {
     padding: 1rem;
     max-width: 600px;
     background: #283538;
-    border: 3px solid rgb(0, 60, 78);
+    border: 3px solid #24b5da;
     border-radius: 1rem;
     justify-content: center;
     align-items:center ;
@@ -324,6 +320,7 @@ header {
     border: 3px solid black;
     justify-content: center;
     display: flex;
+    border-radius: 1rem;
 }
 
 .bold{
@@ -353,29 +350,27 @@ h6 {
     padding: 7.5px;  
 }
 
-.btn-more {
-    width: 150px;
-    height: 40px;
-    border: none;
-    color: white;
+.btn-buy {
+    margin-top: 25px;
     background-color: #24b5da;
-    border-radius: 4px;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 5px 35px;
+    text-transform: uppercase;
+    font-size: 14px;
     box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
     transition: ease-out 0.5s;
-    font-size: 1rem;
-    outline: none;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 10px;
-    margin: 20px 10px 10px;
+    border: 1px solid #ffffff;
   }
   
-.btn-more:hover {
+.btn-buy:hover {
     box-shadow: inset 262px 0 0 0 rgb(251, 252, 251),
     6px 6px 6px #24b5da;
     cursor: pointer;
     color: black;
     font-weight: bold;
+
   }
 
 .detail-popup{
@@ -384,7 +379,7 @@ h6 {
     height: 50%;
     position: absolute;
     top: 200px;
-    left: 100px;
+    left: 500px;
     display: none;
     justify-content: center;
     align-items: center;
@@ -401,13 +396,13 @@ h6 {
     border-radius: 5px;
     position: relative;
     border-radius: 30px;
-    border: 1px solid #24b5da;
+    border: 3px solid #24b5da;
 }
 
 .close {
     position: absolute;
-    top: -15px;
-    right: -15px;
+    top: -10px;
+    right: -10px;
     height: 30px;
     width: 20px;
     border-radius: 50%;
@@ -446,12 +441,12 @@ h6 {
 }
 
 .detail-flex-button {
-    padding: 15px;
-    margin: 15px;
+    padding: 5px;
+    margin: 5px;
 }
 
-.cta-bag, .cta-white {
-    
+.btn-cart, .btn-back {
+    margin-top: 25px;
     background-color: #24b5da;
     color: #fff;
     border-radius: 30px;
@@ -461,9 +456,10 @@ h6 {
     font-size: 14px;
     box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
     transition: ease-out 0.5s;
+    border: 1px solid #ffffff;
 }
 
-.cta-bag:hover, .cta-white:hover {
+.btn-cart:hover, .btn-back:hover {
     box-shadow: inset 262px 0 0 0 rgb(251, 252, 251),
     6px 6px 6px #24b5da;
     cursor: pointer;
@@ -494,6 +490,7 @@ h6 {
     color: #24b5da;
     box-shadow: 2px 2px 4px #283538,
     -2px -2px 4px #283538;  
+    text-align: center;
 }
 
 .info-container:hover {
@@ -511,26 +508,47 @@ h6 {
   color: #24b5da;
 }
 
-.h1{
+.info-container h1{
   font-weight: bold;
   font-size: 3rem;
   margin: 0px;
-  padding: 10px;
+  padding: 25px;
 }
 
-h3 {
+.info-container h3{
   font-size: 2rem;
-  margin: 5px;
-  padding: 5px;
+  margin: 0px;
+  padding: 15px;
 }
 
-p{
+.info-container p{
 
   font-size: 1rem;
   margin: 7.5px;
   padding: 7.5px;
 }
 
+.btn-1 {
+    margin: 16px;
+    padding: 7.5px;
+    background-color: #24b5da;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 5px 35px;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
+    transition: ease-out 0.5s;
+}
+
+.btn-1:hover{
+    box-shadow: inset 262px 0 0 0 rgb(251, 252, 251),
+    6px 6px 6px #24b5da;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
 
 /*Account*/
 
@@ -751,10 +769,25 @@ span {
     box-shadow: 6px 6px 6px #24b5da;
 }
 
+.form h1 {
+    font-size: 3rem;
+    padding: 7.5px;
+    margin: 7.5px;
+}
 
+.form p {
+    color: #24b5da;
+    padding: 7.5px;
+    margin: 7.5px;
+}
+
+label,
+::placeholder {
+    color: #24b5da;
+}
 
 input {
-    width: 100%;
+    width: 95%;
     margin-top: 2px;
     padding: 10px;
     font-size: 16px;
@@ -863,7 +896,14 @@ label {
     perspective: 1000px;
     top: -60px;
     position: relative;
-    
+    border: 3px solid #24b5da;
+    border-radius: 10%;
+    box-shadow: 2px 2px 4px #283538,
+    -2px -2px 4px #283538; 
+}
+
+.myprofile:hover {
+    box-shadow: 6px 6px 6px #24b5da;
 }
 
 
@@ -944,7 +984,7 @@ input[type="mail"] {
     padding: 2em;
     border-radius: 1rem;
     background: #283538;
-    color: #fdfdfd;
+    color: #24b5da;
     border: 3px solid #24b5da;
     width: 600px;
     box-shadow: 2px 2px 4px #283538,
@@ -1132,7 +1172,7 @@ footer {
   
   footer .social_icon li a:hover {
     transform: translateY(-10px);
-    color: #f50bce;
+    color: #ffffff;
     box-shadow: 6px 6px 6px #24b5da;
 
   }
@@ -1149,10 +1189,21 @@ footer {
   
   footer .menu li a:hover{
     opacity: 1;
-    color: #f50bce;
+    color: #ffffff;
     box-shadow: 6px 6px 6px #24b5da;
   }
 
+
+
+/* loader */
+#preloader {
+    background: #000 url(../img/loading.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 
 
 
@@ -1165,5 +1216,17 @@ footer {
 
 a:hover {
     text-decoration: none;
-    color: #f50bce;
+    color: #ffffff;
 }
+
+
+/* media query */
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 10%;
+    }
+    .btn1 {
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+  }
