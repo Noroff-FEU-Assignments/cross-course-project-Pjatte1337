@@ -45,7 +45,7 @@ function createHTML(info) {
                                 `;
 
     picContainer.innerHTML =    `<div>
-                                <img src="${IMGPATH + info.poster_path}" class="image"/>
+                                <img src="${IMGPATH + info.poster_path}" class="image" alt="${info.original_title}"/>
                                 </div>`;
 
     popup.innerHTML =           `
