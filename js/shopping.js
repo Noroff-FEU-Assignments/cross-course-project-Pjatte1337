@@ -1,4 +1,7 @@
 const items = document.querySelector(".items");
+const buttons = document.querySelector(".flex-button");
+const watch = document.querySelector(".lolflexbutton");
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -31,7 +34,12 @@ function createHTML(info){
                         <p class="italic">${info.original_title}</p>
                         <p class="italic">Release ${info.release_date}</p>
                         </div>`;
+    
+    buttons.innerHTML = `<div class="flex-button">
+                        <a href="shopping-done.html?id=${id}" class="cta-small">Checkout</a>
+                        <a href="movies.html" class="cta-white">Continue shopping</a>
+                        </div>`;
 
-}
+};
 
 

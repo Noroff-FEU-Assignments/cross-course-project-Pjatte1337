@@ -1074,7 +1074,7 @@ input[type="mail"] {
 }
 
 
-.flex-button {
+.lolflexbutton {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1237,4 +1237,22 @@ a:hover {
         font-size: 110%;
         padding: 7px 15px;
     }
+  }
+
+
+
+
+
+
+  /* media query */
+  video {
+      width: 900px;
+      border: 1px solid #24b5da;
+    
+  }
+
+  .watch h1 {
+      color: #e6008e;
+      text-align: center;
+      padding-bottom: 50px;
   }

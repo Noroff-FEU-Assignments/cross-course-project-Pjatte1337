@@ -55,12 +55,12 @@ function createHTML(info) {
                                 <p class="italic">length ${info.runtime}Min</p>
                                 <p class="italic">Rating ${info.vote_average}</p>
                                 <p class="italic">Release ${info.release_date}</p>
-                                </div>`
+                                </div>`;
 
     buttons.innerHTML =         `<div class="detail-flex-button">
                                 <a href="./shopping-cart.html?id=${id}" class="btn-cart">go to cart</a>
                                 <a href="movies.html" class="btn-back">Look for more</a>
-                                </div>`
+                                </div>`;
 }
 
 
