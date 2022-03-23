@@ -37,7 +37,7 @@ form.addEventListener("submit", validateForm)
 
 function checkLength(value, len) {
     if(value.trim().length > len){
-        return true;
+        return alert("Thank You! The Form Is Sent!");
     } else {
         return false;
     }

@@ -30,7 +30,7 @@ fetchInfo();
 
 function createHTML(info){
     items.innerHTML =   `<div class="item">
-                        <img src="${IMGPATH + info.poster_path}" class="popup-image"/>
+                        <img src="${IMGPATH + info.poster_path}" alt="${info.original_title}"class="popup-image"/>
                         <p class="italic">${info.original_title}</p>
                         <p class="italic">Release ${info.release_date}</p>
                         </div>`;

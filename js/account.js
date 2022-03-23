@@ -1,3 +1,4 @@
+
 const card = document.getElementById('card');
 
 function openRegister() {

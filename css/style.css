@@ -156,6 +156,7 @@ header {
     flex-wrap:wrap ;
     justify-content: center;
     align-items: center;
+    
 }
 
 .content {
@@ -175,6 +176,7 @@ header {
 .content p {
       margin: 7.5px;
       padding: 7.5px;
+      color: #eee;
 }
 
 .content h1 {
@@ -206,7 +208,7 @@ header {
 }
 
 .movie h1 {
-
+    color: #eee;
 }
 
 .movie-img {
@@ -267,7 +269,7 @@ header {
   }
 
 
-  /* movies-details */
+  /* movies-details */  
   .movie-container {
     margin: 0 auto ;
     padding: 1rem;
@@ -328,6 +330,7 @@ header {
     font-size: 1rem;
     margin: 7.5px;
     padding: 7.5px;
+    color: #eee;
 }
 
 h6 {
@@ -335,12 +338,14 @@ h6 {
     font-size: 3rem;
     margin: 5px;
     padding: 5px;
+    color: #eee;
 }
 
 .italic{
     font-size: 1rem;
     margin: 7.5px;
     padding: 7.5px;
+    color: #eee;
 }
 
 .price{
@@ -348,6 +353,7 @@ h6 {
     font-size: 1rem;
     margin: 7.5px;
     padding: 7.5px;  
+    color: #eee;
 }
 
 .btn-buy {
@@ -438,6 +444,7 @@ h6 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    color: #eee;
 }
 
 .detail-flex-button {
@@ -477,7 +484,9 @@ h6 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 150px;
+    color: #eee;
 
 }
 
@@ -491,6 +500,7 @@ h6 {
     box-shadow: 2px 2px 4px #283538,
     -2px -2px 4px #283538;  
     text-align: center;
+    
 }
 
 .info-container:hover {
@@ -522,10 +532,10 @@ h6 {
 }
 
 .info-container p{
-
   font-size: 1rem;
   margin: 7.5px;
   padding: 7.5px;
+  color: #eee;
 }
 
 .btn-1 {
@@ -598,6 +608,10 @@ h6 {
     backface-visibility: hidden;
     border-radius: 10%;
 }
+
+.card-front h2, .card-back h2{
+    color: #eee;
+} 
 
 .card-back {
     transform: rotateY(180deg);
@@ -740,6 +754,10 @@ span {
     border: 3px solid #24b5da;
 }
 
+.popup-content p {
+    color: #eee;
+}
+
 .close {
     position: absolute;
     top: -15px;
@@ -868,6 +886,7 @@ label {
 
 
 /*my account*/
+
 .myprofile-img {
     box-sizing: border-box;
     width: 149px;
@@ -889,6 +908,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 150px;
 }
 
 
@@ -902,6 +922,7 @@ label {
     border-radius: 10%;
     box-shadow: 2px 2px 4px #283538,
     -2px -2px 4px #283538; 
+
 }
 
 .myprofile:hover {
@@ -974,7 +995,44 @@ input[type="mail"] {
 }
 
 
+/* test */
+.myprofile-history{
+    width: 500px;
+    height: 650px;
+    perspective: 1000px;
+    top: -60px;
+    position: relative;
+    border: 3px solid #24b5da;
+    border-radius: 10%;
+    box-shadow: 2px 2px 4px #283538,
+    -2px -2px 4px #283538; 
+    flex-direction: row;
+}
 
+.myprofile-content {
+    
+}
+
+
+
+.history{
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bought {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 
@@ -988,7 +1046,7 @@ input[type="mail"] {
     background: #283538;
     color: #24b5da;
     border: 3px solid #24b5da;
-    width: 600px;
+    width: 800px;
     box-shadow: 2px 2px 4px #283538,
     -2px -2px 4px #283538;
  }
@@ -996,7 +1054,7 @@ input[type="mail"] {
  .popup-image {
      width: 200px;
      height: 250px;
-     padding: 10px;
+     padding: 5px;
      margin: 25px 0px 25px 0px;
  }
  
@@ -1007,6 +1065,17 @@ input[type="mail"] {
      flex-direction: row;
      align-items: center;
      justify-content: space-around;
+     
+ }
+
+ .shopping-cart  h2 {
+    color: #ffffff;
+}
+
+ .items {
+     text-align: center;
+     color: #ffffff;
+     padding: 50px;
  }
  
  .payment {
@@ -1014,6 +1083,7 @@ input[type="mail"] {
      width:600px;
      display: flex;
      justify-content: space-between;
+     color: #eee;
  }
  
  
