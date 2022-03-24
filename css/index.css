@@ -9,16 +9,17 @@ body {
     height: 100%;
     width: 100%;
     background-color: #000;
-    background-image: url(..//img/SquareEyes_Logo.png);
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+   
+
 }
 
 
 main {
     min-height: 800px;
+    background-image: url(..//img/SquareEyes_Logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
     
 }
 
@@ -28,6 +29,7 @@ main {
     margin: 0 auto;
     text-align: center;
     position: relative;
+    
 }
 
 .btn1 {
