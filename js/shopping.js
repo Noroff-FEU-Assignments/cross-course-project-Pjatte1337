@@ -37,7 +37,7 @@ function createHTML(info){
     
     buttons.innerHTML = `<div class="flex-button">
                         <a href="shopping-done.html?id=${id}" class="cta-small">Checkout</a>
-                        <a href="movies.html" class="cta-white">Continue shopping</a>
+                        <a href="movies.html" class="cta-white">back</a>
                         </div>`;
 
 };

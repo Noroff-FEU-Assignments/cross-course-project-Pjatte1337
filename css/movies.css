@@ -1,0 +1,128 @@
+/* movies */
+.banner {
+    background: #000000;
+    padding: 40px;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    
+    
+    }
+    
+    .content {
+        max-width: 700px;
+        text-align: center;
+    }
+    
+    .content h1 {
+        font-size: 30px;
+        color: white;
+    }
+    
+    .content h2 {
+        font-size: 20px;
+        color: white;
+    }
+    
+    .content p {
+        font-size: 25;
+        color: #fff;
+    }
+
+    .container {
+        background-color: black;
+        min-height: calc(100vh - 50px);
+        color: #010202;
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+    .movies {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .movie {
+        padding: 1rem;
+        background: #283538;
+        border: 3px solid #24b5da;
+        border-radius: 1rem;
+        justify-content: center;
+        align-items:center ;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        position: relative;
+        margin: 1rem;
+        width: 300px;
+        height: 550px;
+        box-shadow: 2px 2px 4px #283538,
+        -2px -2px 4px #283538;  
+    }
+
+    .movie h1, h2 {
+        color: #eee;
+    }
+    
+    .movie-img {
+        width: 100%;
+        height: 70%;
+        margin: 7.5px;
+        padding: 7.5px;
+        border-radius: 1rem;
+    }
+    
+    .movie:hover {
+        box-shadow: 6px 6px 6px #24b5da;
+    }
+    
+    .movie-img {
+        width: 100%;
+        height: 70%;
+        margin: 7.5px;
+        padding: 7.5px;
+        border-radius: 1rem;
+    }
+    
+    .movie-info {
+        color: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem 1rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .movie-info h2 {
+        margin: 7.5px;
+        padding: 7.5px;
+    }
+    
+    
+    .btn-read-more {
+        background-color: #24b5da;
+        color: #fff;
+        border-radius: 30px;
+        text-transform: uppercase;
+        padding: 5px 35px;
+        text-transform: uppercase;
+        font-size: 14px;
+        box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
+        transition: ease-out 0.5s;
+        border: 1px solid #ffffff;
+    }
+    
+      
+      .btn-read-more:hover {
+        box-shadow: inset 262px 0 0 0 rgb(251, 252, 251),
+        6px 6px 6px #24b5da;
+        cursor: pointer;
+        color: black;
+        font-weight: bold;
+      }

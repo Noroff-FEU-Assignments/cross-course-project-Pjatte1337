@@ -1,0 +1,196 @@
+/*my account*/
+.myprofile-img {
+    box-sizing: border-box;
+    width: 149px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0;
+    border: 5px solid #24b5da;
+    padding: 3px;
+    background-color: white;
+}
+
+
+.myprofile-container {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: #000000;
+    color: #24b5da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+
+.myprofile {
+    width: 500px;
+    height: 650px;
+    perspective: 1000px;
+    top: -60px;
+    position: relative;
+    border: 3px solid #24b5da;
+    border-radius: 10%;
+    box-shadow: 2px 2px 4px #283538,
+    -2px -2px 4px #283538; 
+
+}
+
+.myprofile:hover {
+    box-shadow: 6px 6px 6px #24b5da;
+}
+
+
+.myprofile-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #283538;
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    text-align: center;
+}
+
+
+
+.myprofile h2 {
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+input[type="text"],
+input[type="Password"],
+input[type="text"],
+input[type="email"] {
+    display: block;
+    box-sizing: border-box;
+    background: none;
+    color: #fafafa;
+    margin-bottom: 30px;
+    padding: 4px;
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #0082e6;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.update-btn {
+    width: 240px;
+    height: 25px;
+    border: 3px solid #f5f5f5;
+    color: white;
+    background-color: #24b5da;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
+    transition: ease-out 0.5s;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 10px;
+    margin: 35px 0 10px;
+}
+
+.update-btn:hover {
+    box-shadow: inset 400px 0 0 0 rgb(251, 252, 251);
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+/* test */
+.myprofile-history{
+    width: 500px;
+    height: 650px;
+    perspective: 1000px;
+    top: -60px;
+    position: relative;
+    border: 3px solid #24b5da;
+    border-radius: 10%;
+    box-shadow: 2px 2px 4px #283538,
+    -2px -2px 4px #283538; 
+    flex-direction: row;
+}
+
+.myprofile-content {
+    
+}
+
+
+
+.history{
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bought {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.popup{
+    background: rgb(0, 0, 0);
+    width:80%;
+    height: 35%;
+    position: absolute;
+    top: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 3px solid #24b5da;
+}
+
+.popup-content {
+    height: 70%;
+    width: 85%;
+    background: #283538;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    border-radius: 25px;
+    border: 3px solid #24b5da;
+}
+
+.popup-content p {
+    color: #eee;
+}
+
+.close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}

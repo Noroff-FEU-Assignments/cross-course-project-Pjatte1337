@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="cart" content="see details about your purchase">
     <title>SquareEyes | cart</title>
-    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92064f7d65.js" crossorigin="anonymous"></script>
+    <link href="css/shopping-cart.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@800&family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
@@ -23,33 +25,30 @@
     </script>
 </head>
 <header>
-    <div class="navbar">
-        <div class="navbar-container">
-            <div class="logo-container">
-                <a href="index.html"><img src="img/SquareEyes_Logo blue.png" class="logo" alt="SE logo"></a>
-            </div>
-            <div class="profile-container">
-                <ul class="menu-list">
-                    <li class="menu-list-item active"><a href="movies.html">Movies</a></li>
-                    <li class="menu-list-item"><a href="account.html">Account</a></li>
-                    <li class="menu-list-item"><a href="contact.html">Contact</a></li>
-                </ul>
-                <a href="my-account.html"><img class="profile-picture" src="img/profile.jpg" alt="profile picture"></a>
-                <div class="profile-text-container">=</div>
-            </div>
-        </div>
-    </div>
-    <div class="sidebar">
-        <a href="#"><ion-icon class="sidebar-icon" name="search-outline"></ion-icon></a>
-        <a href="index.html"><ion-icon class="sidebar-icon" name="home-outline"></ion-icon></a>
-        <a href="my-account.html"><ion-icon class="sidebar-icon" name="accessibility-outline"></ion-icon></a>
-        <a href="empty.html"><ion-icon class="sidebar-icon" name="cart-outline"></ion-icon></a>
-        <a href="contact.html"><ion-icon class="sidebar-icon" name="help-circle-outline"></ion-icon></a>
+    <a href="index.html"><img src="img/blue.png" class="logo" alt="SE logo"></a>
+    <ul class="navigation">
+        <li class="menu-list-item active"><a href="movies.html">Movies</a></li>
+        <li class="menu-list-item"><a href="account.html">Account</a></li>
+        <li class="menu-list-item"><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="icon-container">
+        <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a></i>
+        <a href="my-account.html"><i class="fa-solid fa-user"></i></i></a>
+        <a href="empty.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="contact.html"><i class="fa-solid fa-comment"></i></a>
     </div>
 </header>
 <hr>
 <body>
     <div id="preloader"></div>
+    <div class="banner">
+        <div class="content">
+            <h1>Welcome to SquareEyes</h1>
+            <p>A video streaming website where you can purchase high-quality videos directly from the people who make them.</p>
+            <h2>Connecting Film-Lovers</h2>
+        </div>
+    </div>
+    <hr>
     <section>
         <div class="container">
             <div class="shopping-cart">
@@ -59,18 +58,42 @@
                     <div class="item"></div>
                 </div>
                 <hr>
-                <div>
-                    <h2>Payment Summary</h2>
-                </div>
-                <div class="payment">
-                    <p>Sub total</p>
-                    <p>$9,99</p> 
-                </div>
-                <hr>
-                <div class="flex-button">
-                </div>
-                <hr>
-                <p>Got a voucher or a promocode?</p>
+                    <div class="payment">
+                        <p>Sub total</p>
+                        <p>$9,99</p> 
+                    </div>
+                    <div class="kort">
+                    </div>
+                    <div class="flex-button">
+                    </div>
+                    <hr>
+                    <p>Got a voucher or a promocode?</p>    
+              
+            </div>
+
+
+            <div class="shopping-card">
+                <form class="card">
+                    <h2>Payment Information</h2>
+                    <p>Cardholder Name</p>
+                    <input type="text" class="inputbox" name="name" required>
+                    <p>Card Number</p>
+                    <input type="number" class="inputbox" name="card_number" id="card_number" required="">
+                    <p>Card Type</p>
+                    <select class="inputbox" name="card_type" id="card_type" required="">
+                      <option value="">--Select a Card Type--</option>
+                      <option value="Visa">Visa</option>
+                      <option value="RuPay">MasterCard</option>
+                    </select>
+                    <div class="expcvv">
+                      <p class="expcvv_text2">CVV</p>
+                      <input type="password" class="inputbox" name="cvv" id="cvv" required="">
+                    </div>
+                    <p></p>
+                    <div class="flex-button">
+                        <button class="cta-small">Update</button>
+                    </div>
+                  </form>
             </div>
         </div>
     </section>

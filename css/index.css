@@ -136,16 +136,3 @@ img {
 }
 
 
-
-
-
-/* media query */
-@media screen and (max-width: 768px) {
-  .content h1 {
-      font-size: 250%;
-  }
-  .btn1 {
-      font-size: 110%;
-      padding: 7px 15px;
-  }
-}

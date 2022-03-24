@@ -32,7 +32,7 @@ fetchInfo();
 function createHTML(info) {
     movieContainer.innerHTML =  `<div>
                                 
-                                <h1>${info.original_title}</h1>
+                                <h2 class>${info.original_title}</h2>
                                 <hr>
                                 <p class="bold">${info.overview}</p>
                                 <p class="italic">length ${info.runtime}Min</p>

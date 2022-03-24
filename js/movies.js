@@ -24,7 +24,7 @@ async function getMovies(){
             const id = movie.id;
 
             movieContainer.innerHTML += `<a href="./movies-details.html?id=${id}" class="movie">
-                                            <h1>${movieTitle}</h1>
+                                            <h2>${movieTitle}</h2>
                                             <img src="${IMGPATH + img}" class="movie-img" alt="${movieTitle}"/>
                                             <button class="btn-read-more"> Read more </button>
                                             </a>
