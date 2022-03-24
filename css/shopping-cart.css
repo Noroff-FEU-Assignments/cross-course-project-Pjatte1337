@@ -127,8 +127,8 @@
     margin: 50px auto;
     border: 3px solid #24b5da;
     padding: 10px 15px;
-    height: 350px;
-    width: 600px;
+    height: 600px;
+    width: auto;
     color: #24b5da;
 }
 
@@ -163,7 +163,11 @@
 
 
 
-
+.fa-circle-check {
+    font-size: 10rem;
+    color: green;
+    padding: 25px 0px;
+}
 
 
 

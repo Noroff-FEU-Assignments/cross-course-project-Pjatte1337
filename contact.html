@@ -27,9 +27,9 @@
 <header>
     <a href="index.html"><img src="img/blue.png" class="logo" alt="SE logo"></a>
     <ul class="navigation">
-        <li class="menu-list-item active"><a href="movies.html">Movies</a></li>
+        <li class="menu-list-item"><a href="movies.html">Movies</a></li>
         <li class="menu-list-item"><a href="account.html">Account</a></li>
-        <li class="menu-list-item"><a href="contact.html">Contact</a></li>
+        <li class="menu-list-item active"><a href="contact.html">Contact</a></li>
     </ul>
     <div class="icon-container">
         <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a></i>
@@ -41,7 +41,12 @@
 <hr>
 <body>
     <div id="preloader"></div>
-
+    <div class="banner">
+        <div class="content">
+            <h1>Connecting Film-Lovers</h1>
+        </div>
+    </div>
+    <hr>
     <section class="container">
         <div class="form">
             <h1>Customer Service</h1>
@@ -52,21 +57,21 @@
                 <div>
                     <label>
                         Full Name - Required
-                        <input name="name" id="fullName" placeholder="Full Name">
+                        <input name="name" id="fullName" placeholder="Full Name" >
                     </label>
                     <div class="error" id="fullNameError">Enter name</div>
                 </div>
                 <div>
                     <label>
                         Message - minimum length of 10 characters
-                        <input name="message" id="message" placeholder="Message">
+                        <input name="message" id="message" placeholder="Message" >
                     </label>
                     <div class="error" id="messageError">Please fill in</div>
                 </div>
                 <div>
                     <label>
                         Email - Only valid email
-                        <input name="email" id="email" placeholder="Email">
+                        <input name="email" id="email" placeholder="Email" >
                     </label>
                     <div class="error" id="emailError">Please enter a valid email address</div>
                 </div>

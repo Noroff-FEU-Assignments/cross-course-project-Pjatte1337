@@ -31,8 +31,47 @@
         border: 1px solid #24b5da;
 
     }
+    .myprofile-container {
+        font-family: sans-serif;
+        background: #000000;
+        color: #24b5da;
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
+    .myprofile {
+        width: 400px;
+        height: 600px;
+        perspective: 1000px;
+        position: relative;
+        border: 3px solid #24b5da;
+        border-radius: 10%;
+        box-shadow: 2px 2px 4px #283538,
+        -2px -2px 4px #283538; 
+    
+    }
+    
+    .myprofile-history{
+        width: 400px;
+        height: 650px;
+        height: 600px;
+        perspective: 1000px;
+        position: relative;
+        border: 3px solid #24b5da;
+        border-radius: 10%;
+        box-shadow: 2px 2px 4px #283538,
+        -2px -2px 4px #283538; 
+        flex-direction: row;
+    }
   }
+
+
+
+
 
 
     /* links */
@@ -265,8 +304,6 @@ footer {
     min-height: 10vh;
     display: flex;
     justify-content: center;
-    
-    
     }
     
     .content {
