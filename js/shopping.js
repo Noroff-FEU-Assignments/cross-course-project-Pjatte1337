@@ -30,14 +30,14 @@ fetchInfo();
 
 function createHTML(info){
     items.innerHTML =   `<div class="item">
-                        <img src="${IMGPATH + info.poster_path}" alt="${info.original_title}"class="popup-image"/>
+                        <img src="${IMGPATH + info.poster_path}" alt="${info.original_title}"class="movie-image"/>
                         <p class="italic">${info.original_title}</p>
                         <p class="italic">Release ${info.release_date}</p>
                         </div>`;
     
     buttons.innerHTML = `<div class="flex-button">
-                        <a href="shopping-done.html?id=${id}" class="cta-small">Checkout</a>
-                        <a href="movies.html" class="cta-white">back</a>
+                        <a href="shopping-done.html?id=${id}" class="btn-cart">Checkout</a>
+                        <a href="movies.html" class="btn-back">back</a>
                         </div>`;
 
 };

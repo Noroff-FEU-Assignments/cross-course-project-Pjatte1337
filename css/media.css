@@ -78,11 +78,13 @@
     a {
         text-decoration: none;
         color: #24b5da;
+        cursor: pointer;
       }
     
     a:hover {
         text-decoration: none;
         color: #ffffff;
+        cursor: pointer;
     }
 
 
@@ -108,12 +110,7 @@
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 
-}
 
 
 /* Body */
@@ -121,6 +118,13 @@ body {
     font-family: 'Roboto', sans-serif;
     /*overflow-x:hidden; */
     background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 
@@ -146,13 +150,7 @@ background: #6936365e;
     left: auto;
 }
 
-.profile-picture {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    border: 3px solid #24b5da;
-    position: relative;
-}
+
 
 
 
@@ -213,9 +211,25 @@ header .navigation li a:hover {
 }
 
 .icon-container i {
-    margin: 0 20px;
+    margin: 0 10px;
+    color: #24b5da;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    background: #283538;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px #283538,
+    -2px -2px 4px #283538;  
 }
 
+.icon-container i:hover {
+    opacity: 1;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    box-shadow: 6px 6px 6px #24b5da;
+}
 
 
 

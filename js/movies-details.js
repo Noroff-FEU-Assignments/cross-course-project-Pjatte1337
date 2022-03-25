@@ -1,8 +1,8 @@
 const movieContainer = document.querySelector(".movie-container");
-const popup = document.querySelector(".detail-flex-info");
+const popup = document.querySelector(".detail-info");
 const picContainer = document.querySelector(".pic-container");
 const items = document.querySelector(".items");
-const buttons = document.querySelector (".detail-flex-button");
+const buttons = document.querySelector (".detail-button");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -49,7 +49,7 @@ function createHTML(info) {
                                 </div>`;
 
     popup.innerHTML =           `
-                                <div class="detail-flex-info">
+                                <div class="detail-info">
                                 <img src="${IMGPATH + info.poster_path}" class="detail-popup-image"/>
                                 <p class="italic">${info.original_title}</p>
                                 <p class="italic">length ${info.runtime}Min</p>
@@ -57,7 +57,7 @@ function createHTML(info) {
                                 <p class="italic">Release ${info.release_date}</p>
                                 </div>`;
 
-    buttons.innerHTML =         `<div class="detail-flex-button">
+    buttons.innerHTML =         `<div class="detail-button">
                                 <a href="./shopping-cart.html?id=${id}" class="btn-cart">go to cart</a>
                                 <a href="movies.html" class="btn-back">Look for more</a>
                                 </div>`;
