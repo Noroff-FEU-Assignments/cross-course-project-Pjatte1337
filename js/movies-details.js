@@ -1,4 +1,4 @@
-const movieContainer = document.querySelector(".movie-container");
+const moviesContainer = document.querySelector(".movie-container");
 const popup = document.querySelector(".detail-info");
 const picContainer = document.querySelector(".pic-container");
 const items = document.querySelector(".items");
@@ -9,9 +9,7 @@ const id = params.get("id");
 console.log(id);
 
 
-const apiKey = '04c35731a5ee918f014970082a0088b1';
-const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`;
-const IMGPATH = "https://image.tmdb.org/t/p/w1280";
+const url = `https://www.pjatteprocjet.one/wp-json/wc/store/products/${id}`;
 console.log(url);
 
 async function fetchInfo(){
@@ -30,31 +28,27 @@ async function fetchInfo(){
 fetchInfo();
 
 function createHTML(info) {
-    movieContainer.innerHTML =  `<div>
+    moviesContainer.innerHTML =  `<div>
                                 
-                                <h2 class>${info.original_title}</h2>
+                                <h2 class>${info.name}</h2>
                                 <hr>
-                                <p class="bold">${info.overview}</p>
-                                <p class="italic">length ${info.runtime}Min</p>
-                                <p class="italic">Rating ${info.vote_average}</p>
-                                <p class="italic">Release ${info.release_date}</p>
-                                <p class="price"> Price : $9,99 </p>
+                                <p class="bold">${info.description}</p>
+                                <p class="italic"> ${info.short_description} </p>
+                                <p class="price">Price : ${info.prices.price}${info.prices.currency_code}</p>
                                 <hr>
                                 <button class="btn-buy" id="button">Buy to watch</button>
                                 </div>
                                 `;
 
     picContainer.innerHTML =    `<div>
-                                <img src="${IMGPATH + info.poster_path}" class="image" alt="${info.original_title}"/>
+                                <img src="${info.images[0].src}" class="image" alt="${info.name}"/>
                                 </div>`;
 
     popup.innerHTML =           `
                                 <div class="detail-info">
-                                <img src="${IMGPATH + info.poster_path}" class="detail-popup-image"/>
-                                <p class="italic">${info.original_title}</p>
-                                <p class="italic">length ${info.runtime}Min</p>
-                                <p class="italic">Rating ${info.vote_average}</p>
-                                <p class="italic">Release ${info.release_date}</p>
+                                <img src="${info.images[0].src}" class="detail-popup-image"/>
+                                <p class="italic">${info.name}</p>
+                                <p class="italic"> ${info.description}</p>
                                 </div>`;
 
     buttons.innerHTML =         `<div class="detail-button">

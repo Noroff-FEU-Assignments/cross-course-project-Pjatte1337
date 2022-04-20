@@ -8,9 +8,7 @@ const id = params.get("id");
 console.log(id);
 
 
-const apiKey = '04c35731a5ee918f014970082a0088b1';
-const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`;
-const IMGPATH = "https://image.tmdb.org/t/p/w1280";
+const url = `https://www.pjatteprocjet.one/wp-json/wc/store/products/${id}`;
 console.log(url);
 
 async function fetchInfo(){
@@ -30,9 +28,9 @@ fetchInfo();
 
 function createHTML(info){
     items.innerHTML =   `<div class="item">
-                        <img src="${IMGPATH + info.poster_path}" alt="${info.original_title}"class="movie-image"/>
-                        <p class="italic">${info.original_title}</p>
-                        <p class="italic">Release ${info.release_date}</p>
+                        <img src="${info.images[0].src}" alt="${info.name}"class="movie-image"/>
+                        <p class="italic">${info.name}</p>
+                        <p class="italic"> ${info.description}</p>
                         </div>`;
     
     buttons.innerHTML = `<div class="flex-button">

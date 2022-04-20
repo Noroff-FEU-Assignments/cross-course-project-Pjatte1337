@@ -1,51 +1,30 @@
-const api_key = `04c35731a5ee918f014970082a0088b1`;
-const baseUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${api_key}&sort_by=popularity.desc&page=1`;
-const IMGPATH = "https://image.tmdb.org/t/p/w1280";
-
+const baseUrl = "https://www.pjatteprocjet.one/wp-json/wc/store/products?per_page=14";
 
 const movieContainer = document.querySelector(".container");
 
-async function getMovies(){
-    try{
-        const response = await fetch(baseUrl);
-        const json = await response.json();
-        const data = json.results;
+async function getProduct(url){
+    const response = await fetch(url);
+    const products = await response.json();
+    console.log(products);
 
-        console.log(data);
+    movieContainer.innerHTML ="";
 
-        movieContainer.innerHTML ="";
+    products.forEach(movie => {
+        const movieName = movie.name;
+        const id = movie.id;
+        const img = movie.images[0].src;
+        const info = movie.description;
+        const aInfo = movie.short_description;
 
-        data.forEach(movie => {
-            const movieTitle = movie.title;
-            const date = movie.release_date;
-            const img = movie.poster_path;
-            const info = movie.overview;
-            const rating = movie.vote_average;
-            const id = movie.id;
-
-            movieContainer.innerHTML += `<a href="./movies-details.html?id=${id}" class="movie">
-                                            <h2>${movieTitle}</h2>
-                                            <img src="${IMGPATH + img}" class="movie-img" alt="${movieTitle}"/>
+        movieContainer.innerHTML += `<a href="./movies-details.html?id=${id}" class="movie">
+                                            <h2>${movieName}</h2>
+                                            <img src="${img}" class="movie-img" alt="${movieName}"/>
                                             <button class="btn-read-more"> Read more </button>
                                             </a>
                                             `
-        });
-
         
-    } catch (error) {
-        movieContainer.innerHTML += `<p class="movie">Something is wrong, please try again or contact us</p>`;
-    }
+    });
+
 }
 
-getMovies();
-
-
-
-
-
-
-
-
-
-
-
+getProduct(baseUrl);
