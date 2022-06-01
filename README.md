@@ -12,9 +12,22 @@
  ---
  
 ### Description
-<p>This was my Semester Project where we had to make a website for a Community Science Museum.
-The target audiance was children aged 7-15, and families with younger kids and schools.
-The page should have at keast 4-6 pages, writing the code with semantic and neatly indented HTML, and we had to follow the DRY principles for the CSS. The site also need to be responive.</p>
+<p>
+  This was my Cross Course Assignment where we had to make a website from a selected brief, for me that was SquareEyes.
+  The target audience was people aged 25 to 40 that are interested in cinema, and enjoy watching interesting and high-quality films.
+  The Site Architecture
+  <ul>
+  <li> Homepage </li>
+  <li> List of videos page </li>
+  <li> A video page showing the product details </li>
+  <li> A checkout page</li>
+  <li> A checkout success page</li>
+  <li> About page</li>
+  <li> Contact page</li>
+  </ul>
+  I did everyghing from the beginning from making the wireframes and prototype to HMTL and CSS. 
+  This site also use JavaScript to fetch an API from headless WordPress page that i also did make. 
+</p>
 
  ---
 
