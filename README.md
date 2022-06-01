@@ -6,7 +6,7 @@
  ---
 
 <div>
-  <img src="https://github.com/Noroff-FEU-Assignments/cross-course-project-Pjatte1337/blob/main/img/cross-course.png"width="800" height="400"/> </img>
+  <img src="https://github.com/Noroff-FEU-Assignments/cross-course-project-Pjatte1337/blob/main/img/cross-course.png"width="1200" height="400"/> </img>
 </div>
 
  ---
